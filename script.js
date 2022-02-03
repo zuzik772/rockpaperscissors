@@ -1,10 +1,13 @@
 let user = document.getElementById("player1");
 let comp = document.getElementById("player2");
+let buttons = document.getElementById("buttons");
 
 document.querySelector(".rock").addEventListener("click", function () {
+  buttons.classList.add("disabled");
   userChoice("r");
   user.classList.add("shake");
   user.classList.add("rock");
+
   setTimeout(() => {
     user.classList.remove("shake");
   }, 1500);

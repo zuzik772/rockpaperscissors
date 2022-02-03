@@ -3,8 +3,8 @@ let comp = document.getElementById("player2");
 let buttons = document.getElementById("buttons");
 
 document.querySelector(".rock").addEventListener("click", function () {
-  buttons.classList.add("disabled");
   userChoice("r");
+  buttons.classList.add("disabled");
   user.classList.add("shake");
   user.classList.add("rock");
 
@@ -14,6 +14,7 @@ document.querySelector(".rock").addEventListener("click", function () {
 });
 document.querySelector(".paper").addEventListener("click", function () {
   userChoice("p");
+  buttons.classList.add("disabled");
   user.classList.add("shake");
   user.classList.add("paper");
   setTimeout(() => {
@@ -22,6 +23,7 @@ document.querySelector(".paper").addEventListener("click", function () {
 });
 document.querySelector(".scissors").addEventListener("click", function () {
   userChoice("s");
+  buttons.classList.add("disabled");
   user.classList.add("shake");
   user.classList.add("scissors");
   setTimeout(() => {
